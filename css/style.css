@@ -134,8 +134,14 @@ header {
     border: none;
 }
 .contact-page i,
+.contact-page .contact-text-address,
 .contact-page a {
     color: var(--primary-color);
+}
+.contact-page i,
+.contact-page .contact-text-address,
+.contact-page a {
+    font-size: 16px;
 }
 footer {
     background-color: var(--primary-color);

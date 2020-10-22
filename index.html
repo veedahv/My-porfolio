@@ -18,57 +18,52 @@
 <body>
     <header class="position-fixed w-100">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Veedah</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
+            <nav class="navbar navbar-expand-lg px-0">
+                <a class="navbar-brand" href="index.html">Veedah</a>
+                <button class="" id="hamburger-btn">
+                    <span class="">
                         <div class="hamburger" id="hamburger">
-                          <span class="line"></span>
-                          <span class="line"></span>
-                          <span class="line"></span>
+                            <!-- <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span> -->
                         </div>
                     </span>
                 </button>
                 <div class="ml-auto desktop-nav" id="">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link px-3 active" href="#landing-page">Home</span></a>
+                        <a class="nav-item nav-link pl-0 pr-3 active" href="index.html">Home</span></a>
                         <a class="nav-item nav-link px-3" href="#about-page">About Me</a>
                         <a class="nav-item nav-link px-3" href="#skills-page">Skills</a>
                         <a class="nav-item nav-link px-3" href="#project-page">My projects</a>
-                        <a class="nav-item nav-link px-3" href="#contact-page">Contact Me</a>
+                        <a class="nav-item nav-link pr-0 pl-3" href="#contact-page">Contact Me</a>
                     </div>
-                </div>                
-                <!-- <div class="mobile-nav">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link px-3 active" href="#landing-page">Home</span></a>
-                        <a class="nav-item nav-link px-3" href="#about-page">About Me</a>
-                        <a class="nav-item nav-link px-3" href="#skills-page">Skills</a>
-                        <a class="nav-item nav-link px-3" href="#project-page">My projects</a>
-                        <a class="nav-item nav-link px-3" href="#contact-page">Contact Me</a>
-                    </div>
-                </div> -->
-                <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link px-3 active" href="#landing-page">Home</span></a>
-                        <a class="nav-item nav-link px-3" href="#about-page">About Me</a>
-                        <a class="nav-item nav-link px-3" href="#skills-page">Skills</a>
-                        <a class="nav-item nav-link px-3" href="#project-page">My projects</a>
-                        <a class="nav-item nav-link px-3" href="#contact-page">Contact Me</a>
-                    </div>
-                </div> -->
+                </div>
             </nav>
         </div>
     </header>
+                <div class="mobile-nav position-fixed py-5">
+                    <div class="position-absolute px-3 d-flex flex-column">
+                        <a class="px-3 nav-link my-3 mobile-nav-link active" href="index.html">Home</span></a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#about-page">About Me</a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#skills-page">Skills</a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#project-page">My projects</a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#contact-page">Contact Me</a>
+                    </div>
+                </div>
     <main>
         <section class="landing-page" id="landing-page">
             <div class="container h-100">
                 <div class="d-flex align-items-center h-100">
                     <div class="">
+                            <p class="greet mb-0">Hi,</p>
+                            <p class="name mb-0">My name is Victoria Akpan.</p>
                         <h1 class="">
-                            Hi, <br>
-                            My name is Victoria Akpan. <br>
-                            I am a front-end web developer. <br>
+                            <span class="career-spec mb-0">I am a <b>front-end web developer.</b></span>
+                            <span class="career-spec mb-0">
+                                I use HTML, CSS & Javascript to bring designs to life. 
+                                I specialize in creating clean, fast and accessible websites using 
+                                appropriate front-end technologies and techniques.
+                            </span>
                         </h1>
                     </div>
                 </div>
@@ -85,20 +80,16 @@
             <div class="container py-5">
                 <div class="card mb-3">
                     <div class="row no-gutters">
-                        <div class="col-md-5" data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
-                            <img src="..." class="card-img" alt="...">
+                        <div class="col-md-5" data-aos="fade-up" data-aos-duration="700" data-aos-offset="30"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./images/about-me.jpg" class="card-img h-100" alt="...">
                         </div>
-                        <div class="col-md-7" data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
+                        <div class="col-md-7" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700" data-aos-easing="ease-in-sine">
                             <div class="card-body">
-                                <h2 class="card-title headings">
+                                <h2 class="card-title headings p-1">
                                     More about me
                                 </h2>
                                 <p class="card-text">
-                                    I specialize in creating fast and accessivle websites.
                                     While not creating websites, I enjoy watching movies, playing
                                     games, reading good books and also spending time with friends.
                                 </p>
@@ -110,27 +101,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div>
-                    <img src="images" alt="">
-                </div>
-                <div>
-                    <h2>
-                        More about me
-                    </h2>
-                </div>
-                <div>
-                    <div>
-                        <p>
-                            I specialize in creating fast and accessivle websites.
-                            While not creating websites, I enjoy watching movies, playing
-                            games, reading good books and also spending time with friends.
-                        </p>
-                        <p>
-                            Whenever I am stressed out, I spend my time cooking,
-                            baking, eating and painting my nails to relieve the stress.
-                        </p>
-                    </div>
-                </div> -->
             </div>
         </section>
         <section class="skills-page" id="skills-page">
@@ -202,48 +172,49 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-6 col-xm-6 col-md-6 my-3">
-                                <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                <div class="card h-100">
+                                    <img src="./images/hotel-booking.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h3 class="card-title">Card title</h3>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn">View Live</a>
+                                        <h3 class="card-title p-1">Hotel Booking</h3>
+                                        <p class="card-text">
+                                            I created a hotel booking app using just html and css.</p>
+                                        <a href="https://best-tour-site.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-xm-6 col-md-6 my-3">
+                            <div class="col-sm-6 col-xm-6 col-md-6 my-3 h-100">
                                 <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                    <img src="./images/budget-app.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h3 class="card-title">Card title</h3>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn">View Live</a>
+                                        <h3 class="card-title p-1">Budget App</h3>
+                                        <p class="card-text">
+                                            I created a shopping list budget app using html, css and js.
+                                        </p>
+                                        <a href="https://shopping-list-budget.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 col-xm-6 col-md-6 my-3">
-                                <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                <div class="card h-100">
+                                    <img src="./images/weather-app.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h3 class="card-title">Card title</h3>
+                                        <h3 class="card-title p-1">Dashboard</h3>
                                         <p class="card-text">Some quick example text to build on the card title and make
                                             up the bulk of the card's content.</p>
-                                        <a href="#" class="btn">View Live</a>
+                                        <a href="https://vee-ecommerce-dashboard.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xm-6 col-md-6 my-3">
-                                <div class="card">
-                                    <img src="..." class="card-img-top" alt="...">
+                                <div class="card h-100">
+                                    <img src="./images/weather-app.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h3 class="card-title">Card title</h3>
+                                        <h3 class="card-title p-1">Weather App</h3>
                                         <p class="card-text">Some quick example text to build on the card title and make
                                             up the bulk of the card's content.</p>
-                                        <a href="#" class="btn">View Live</a>
+                                        <a href="https://veedahv-weather-app.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +241,7 @@
                             <div class="col-sm-4 col-xm-4 col-md-4 my-2">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Attention to details</h5>
+                                        <h5 class="card-title p-1">Attention to details</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make
                                             up the bulk of the card's content.</p>
                                     </div>
@@ -279,7 +250,7 @@
                             <div class="col-sm-4 col-xm-4 col-md-4 my-2">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Good at researching</h5>
+                                        <h5 class="card-title p-1">Good at researching</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make
                                             up the bulk of the card's content.</p>
                                     </div>
@@ -287,7 +258,7 @@
                             </div>
                             <div class="col-sm-4 col-xm-4 col-md-4 my-2">
                                 <div class="card">
-                                    <div class="card-body">
+                                    <div class="card-body p-1">
                                         <h5 class="card-title">Active listener</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make
                                             up the bulk of the card's content.</p>
@@ -340,27 +311,21 @@
                             <div class="contact-grid text-center">
                                 <div class="card py-3">
                                     <i class="fa mb-2 fa-2x fa-envelope-o" aria-hidden="true"></i>
-                                    <h5 class="contact-text">Email</h5>
+                                    <h5 class="contact-text p-1">Email</h5>
                                     <a href="mailto:veedahv55@gmail.com">veedahv55@gmail.com</a>
                                 </div>
                                 <div class="card my-2 py-3">
                                     <i class="fa mb-2 fa-2x fa-mobile" aria-hidden="true"></i>
-                                    <h5 class="contact-text">Phone</h5>
+                                    <h5 class="contact-text p-1">Phone</h5>
                                     <a href="tel:+23470870050">+23470870050</a>
                                 </div>
                                 <div class="card py-3">
                                     <i class="fa mb-2 fa-2x fa-map-marker" aria-hidden="true"></i>
-                                    <h5 class="contact-text">Address</h5>
+                                    <h5 class="contact-text p-1">Address</h5>
                                     <p class="contact-text-address">Uyo, Akwa Ibom</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="map-div w-100">
-                            <h3 class="text-center">Location</h3>
-                            <div class="w-100">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="200" frameborder="0" style="border:0"></iframe>
-                             </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -369,42 +334,43 @@
     <footer class=" py-4">
         <div class="container">
             <div class="d-flex justify-content-between footer-div">
-            <div class="py-2">
-                <div class="social-media-icons text-center mx-auto">
-                    <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer" class="px-1">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://github.com/veedahv" target="_blank" rel="noopener noreferrer" class="px-1">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
+                <div class="py-2">
+                    <div class="social-media-icons text-center mx-auto">
+                        <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer"
+                            class="px-1">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/veedahv" target="_blank" rel="noopener noreferrer" class="px-1">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a> -->
+                    </div>
                 </div>
+                <p class="py-2 text-center">
+                    &#169; Veedah || 2020
+                </p>
             </div>
-            <p class="py-2 text-center">
-                &#169; Veedah || 2020
-            </p>
-        </div>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
-    <script src="js/script.js"></script>
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

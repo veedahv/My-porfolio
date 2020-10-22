@@ -189,6 +189,7 @@ footer a {
         transition: background-color 3s ease-in, width 3s ease-in;
     } 
     #hamburger-btn {
+        background-color: transparent;
         display: block;
     }
     #hamburger-btn {

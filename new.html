@@ -8,17 +8,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&family=Vollkorn:wght@600;700;800;900&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Victoria Akpan</title>
 </head>
 
 <body>
     <header class="position-fixed w-100">
         <div class="container">
-            <nav class="flex">
-                <a class="brand" href="index.html">Veedah</a>
+            <nav class="navbar navbar-expand-lg px-0">
+                <a class="navbar-brand" href="index.html">Veedah</a>
                 <button class="" id="hamburger-btn">
                     <span class="">
                         <div class="hamburger" id="hamburger">
@@ -40,27 +41,27 @@
             </nav>
         </div>
     </header>
-    <div class="mobile-nav position-fixed py-5">
-        <div class="position-absolute px-3 d-flex flex-column">
-            <a class="px-3 nav-link my-3 mobile-nav-link active" href="index.html">Home</span></a>
-            <a class="px-3 nav-link my-3 mobile-nav-link " href="#about-page">About Me</a>
-            <a class="px-3 nav-link my-3 mobile-nav-link " href="#skills-page">Skills</a>
-            <a class="px-3 nav-link my-3 mobile-nav-link " href="#project-page">My projects</a>
-            <a class="px-3 nav-link my-3 mobile-nav-link " href="#contact-page">Contact Me</a>
-        </div>
-    </div>
+                <div class="mobile-nav position-fixed py-5">
+                    <div class="position-absolute px-3 d-flex flex-column">
+                        <a class="px-3 nav-link my-3 mobile-nav-link active" href="index.html">Home</span></a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#about-page">About Me</a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#skills-page">Skills</a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#project-page">My projects</a>
+                        <a class="px-3 nav-link my-3 mobile-nav-link " href="#contact-page">Contact Me</a>
+                    </div>
+                </div>
     <main>
         <section class="landing-page" id="landing-page">
             <div class="container h-100">
-                <div class="landing-page-container flex align-items-center h-100">
+                <div class="d-flex align-items-center h-100">
                     <div class="">
-                        <p class="greet">Hi,</p>
-                        <p class="name">My name is Victoria Akpan.</p>
+                            <p class="greet mb-0">Hi,</p>
+                            <p class="name mb-0">My name is Victoria Akpan.</p>
                         <h1 class="">
-                            <span class="career-spec">I am a <b>front-end web developer.</b></span>
-                            <span class="career-spec">
-                                I use HTML, CSS & Javascript to bring designs to life.
-                                I specialize in creating clean, fast and accessible websites using
+                            <span class="career-spec mb-0">I am a <b>front-end web developer.</b></span>
+                            <span class="career-spec mb-0">
+                                I use HTML, CSS & Javascript to bring designs to life. 
+                                I specialize in creating clean, fast and accessible websites using 
                                 appropriate front-end technologies and techniques.
                             </span>
                         </h1>
@@ -78,13 +79,12 @@
         <section class="about-page" id="about-page">
             <div class="container py-5">
                 <div class="card mb-3">
-                    <div class="flex about-card">
+                    <div class="row no-gutters">
                         <div class="col-md-5" data-aos="fade-up" data-aos-duration="700" data-aos-offset="30"
                             data-aos-easing="ease-in-sine">
                             <img src="./images/about-me.jpg" class="card-img h-100" alt="...">
                         </div>
-                        <div class="col-md-7" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine">
+                        <div class="col-md-7" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700" data-aos-easing="ease-in-sine">
                             <div class="card-body">
                                 <h2 class="card-title headings p-1">
                                     More about me
@@ -105,113 +105,61 @@
         </section>
         <section class="skills-page" id="skills-page">
             <div class="container py-5">
-                <div class="grid skill-contain">
-                    <div class="col-md-6">
-                        <div>
-                            <h2 class="headings">
-                                My skill set
-                            </h2>
-                        </div>
-                        <div class="grid skill-grid">
-                            <div class="skill-cards card">
-                                <div class="card-body">
-                                    <img src="./images/HTML5_Badge.svg" alt="">
-                                    <h5 class="contact-text p-1">HTML</h5>
-                                </div>
-                            </div>
-                            <div class="skill-cards card">
-                                <div class="card-body">
-                                    <img src="./images/CSS3-logo.png" alt="">
-                                    <h5 class="contact-text p-1">CSS</h5>
-                                </div>
-                            </div>
-                            <div class="skill-cards card">
-                                <div class="card-body">
-                                    <img src="./images/javascript.svg" alt="">
-                                    <h5 class="contact-text p-1">JavaScript</h5>
-                                </div>
-                            </div>
-                            <div class="skill-cards card">
-                                <div class="card-body">
-                                    <img src="./images/Bootstrap_logo.svg" alt="">
-                                    <h5 class="contact-text p-1">Bootstrap</h5>
-                                </div>
-                            </div>
-                            <div class="skill-cards card">
-                                <div class="card-body">
-                                    <i class="fa fa-4x fa-git"></i>
-                                    <h5 class="contact-text p-1">Git</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row">
                     <div class="col-md-6">
                         <div>
                             <h2 class="headings">
                                 My education
                             </h2>
                         </div>
-                        <div class="grid edu-grid">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="edu-head flex">
-                                        <h3 class="edu-title">Tech 101</h3>
-                                        <h4 class="edu-time">March 2020</h4>
-                                    </div>
-                                    <hr>                                    
-                                    <p class="contact-text">
-                                        Learnt basic html and css skills
-                                    </p>
-                                </div>
+                        <div>
+                            <ul>
+                                <!-- <li>
+                                    SMC - 2012 - 2015
+                                </li>
+                                <li>
+                                    TISS - 2015 - 2017
+                                </li> -->
+                                <li>
+                                    Tech 101 - 2020 - 2020
+                                </li>
+                                <li>
+                                    Web development - 2020 - 2020
+                                </li>
+                                <li>
+                                    University of Uyo - 2017 - 2022
+                                </li>
+                                <li>
+                                    Graduated from TISS - 2015 - 2017
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h2 class="headings">
+                                My skill set
+                            </h2>
+                        </div>
+                        <div>
+                            <div class="skill-cards card">
+                                <img src="" alt="">
+                                <h3>HTML</h3>
                             </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="edu-head flex">
-                                        <h3 class="edu-title">FreeCodeCamp</h3>
-                                        <h4 class="edu-time">September 2020</h4>
-                                    </div>
-                                    <hr>
-                                    <p class="contact-text">
-                                        Responsive web designs
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="edu-head flex">
-                                        <h3 class="edu-title">Web development</h3>
-                                        <h4 class="edu-time">August 2020 - September 2020</h4>
-                                    </div>
-                                    <hr>
-                                    <p class="contact-text">
-                                        Learnt basic html and css skills
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="edu-head flex">
-                                        <h3 class="edu-title">TISS</h3>
-                                        <h4 class="edu-time">September 2015 - July 2017</h4>
-                                    </div>
-                                    <hr>
-                                    <p class="contact-text">
-                                        Completed high school
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="edu-head flex">
-                                        <h3 class="edu-title">University of Uyo</h3>
-                                        <h4 class="edu-time">September 2017 - Till date</h4>
-                                    </div>
-                                    <hr>
-                                    <p class="contact-text">
-                                        Studying for a B.Sc for Computer Engineering
-                                    </p>
-                                </div>
-                            </div>
+                            <ul>
+                                <li>
+                                    HTML
+                                </li>
+                                <li>
+                                    CSS
+                                </li>
+                                <li>
+                                    JavaScript
+                                </li>
+                                <li>
+                                    Bootstrap
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -226,7 +174,7 @@
                 </div>
                 <div>
                     <div>
-                        <div class="grid project-grid">
+                        <div class="row">
                             <div class="col-sm-6 col-xm-6 col-md-6 my-3">
                                 <div class="card h-100">
                                     <img src="./images/hotel-booking.jpg" class="card-img-top" alt="...">
@@ -234,7 +182,7 @@
                                         <h3 class="card-title p-1">Hotel Booking</h3>
                                         <p class="card-text">
                                             I created a hotel booking app using just html and css.</p>
-                                        <a href="https://best-tour-site.netlify.app/" class="btn">Live Demo</a>
+                                        <a href="https://best-tour-site.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
@@ -246,10 +194,12 @@
                                         <p class="card-text">
                                             I created a shopping list budget app using html, css and js.
                                         </p>
-                                        <a href="https://shopping-list-budget.netlify.app/" class="btn">Live Demo</a>
+                                        <a href="https://shopping-list-budget.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-sm-6 col-xm-6 col-md-6 my-3">
                                 <div class="card h-100">
                                     <img src="./images/weather-app.jpg" class="card-img-top" alt="...">
@@ -257,7 +207,7 @@
                                         <h3 class="card-title p-1">Dashboard</h3>
                                         <p class="card-text">Some quick example text to build on the card title and make
                                             up the bulk of the card's content.</p>
-                                        <a href="https://vee-ecommerce-dashboard.netlify.app/" class="btn">Live Demo</a>
+                                        <a href="https://vee-ecommerce-dashboard.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +218,7 @@
                                         <h3 class="card-title p-1">Weather App</h3>
                                         <p class="card-text">Some quick example text to build on the card title and make
                                             up the bulk of the card's content.</p>
-                                        <a href="https://veedahv-weather-app.netlify.app/" class="btn">Live Demo</a>
+                                        <a href="https://veedahv-weather-app.netlify.app/" class="btn">View Live</a>
                                     </div>
                                 </div>
                             </div>
@@ -336,7 +286,7 @@
                 </div>
                 <div class="contact-info ">
                     <!-- <h1>Contact Us</h1> -->
-                    <div class="grid contact-info-grid my-3">
+                    <div class="row my-3">
                         <div class="col-md-7 col-sm-7 my-2">
                             <form action="post" class="text-center">
                                 <label for="name" class="w-100">
@@ -363,26 +313,20 @@
                         </div>
                         <div class="contact-info col-md-5 col-sm-5 my-2">
                             <div class="contact-grid text-center">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <i class="fa mb-2 fa-2x fa-envelope-o" aria-hidden="true"></i>
-                                        <h5 class="contact-text p-1">Email</h5>
-                                        <a href="mailto:veedahv55@gmail.com">veedahv55@gmail.com</a>
-                                    </div>
+                                <div class="card py-3">
+                                    <i class="fa mb-2 fa-2x fa-envelope-o" aria-hidden="true"></i>
+                                    <h5 class="contact-text p-1">Email</h5>
+                                    <a href="mailto:veedahv55@gmail.com">veedahv55@gmail.com</a>
                                 </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <i class="fa mb-2 fa-2x fa-mobile" aria-hidden="true"></i>
-                                        <h5 class="contact-text p-1">Phone</h5>
-                                        <a href="tel:+23470870050">+23470870050</a>
-                                    </div>
+                                <div class="card my-2 py-3">
+                                    <i class="fa mb-2 fa-2x fa-mobile" aria-hidden="true"></i>
+                                    <h5 class="contact-text p-1">Phone</h5>
+                                    <a href="tel:+23470870050">+23470870050</a>
                                 </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <i class="fa mb-2 fa-2x fa-map-marker" aria-hidden="true"></i>
-                                        <h5 class="contact-text p-1">Address</h5>
-                                        <p class="contact-text-address">Uyo, Akwa Ibom</p>
-                                    </div>
+                                <div class="card py-3">
+                                    <i class="fa mb-2 fa-2x fa-map-marker" aria-hidden="true"></i>
+                                    <h5 class="contact-text p-1">Address</h5>
+                                    <p class="contact-text-address">Uyo, Akwa Ibom</p>
                                 </div>
                             </div>
                         </div>
@@ -393,7 +337,7 @@
     </main>
     <footer class=" py-4">
         <div class="container">
-            <div class="flex justify-content-between footer-div">
+            <div class="d-flex justify-content-between footer-div">
                 <div class="py-2">
                     <div class="social-media-icons text-center mx-auto">
                         <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer"

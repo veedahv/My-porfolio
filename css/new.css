@@ -9,6 +9,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
     /* border: .3px solid red; */
 }
 body {
@@ -30,88 +31,17 @@ p {
 }
 a {
     color: inherit;
-    text-decoration: none;
-}
-.card-body {
-    padding: 20px;
-}
-.card {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-}
-.card p {
-    margin-bottom: 20px;
-}
-.card-img {
-    width: 100%;
-    border-radius: 5px 0 0 5px;
-}
-.card-img-top {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-}
-footer .container,
-section .container {
-    max-width: 1150px;
-    margin: auto;
-    padding: 40px 30px;
-}
-.grid {
-    display: grid;
-    gap: 25px;
-}
-.flex {
-    display: flex;
-}
-.h-100 {
-    height: 100%;
-}
-.w-100 {
-    width: 100%;
 }
 .btn {
     color: #fff;
     background-color: var(--primary-color);
     border: none;
-    padding: 8px 10px;
-    border-radius: 5px;
-}
-.card .btn {
-    margin-bottom: 120px;
-}
-.headings {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 header {
     color: var(--primary-color);
     width: 100vw !important;
     z-index: 3;
     background-color: var(--sec-color);
-    position: fixed;
-}
-header .container {
-    max-width: 1150px;
-    margin: auto;
-    padding: 15px 30px;
-}
-header nav {
-    justify-content: space-between;
-    align-items: center;
-}
-.brand {
-    font-size: 20px;
-    font-weight: 700;
-}
-.desktop-nav a {
-    padding: 2px 10px;
-}
-.desktop-nav a:first-of-type {
-    padding-left: 0px;
-}
-.desktop-nav a:last-of-type {
-    padding-right: 0px;
 }
 #hamburger-btn,
 .mobile-nav {
@@ -133,7 +63,57 @@ header nav {
 .nav-link.active {
     text-decoration: none;
 }
- 
+  /* .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    display: block;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+#hamburger.is-active{
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #hamburger.is-active .line:nth-child(2){
+    width: 0px;
+  }
+  
+  #hamburger.is-active .line:nth-child(1),
+  #hamburger.is-active .line:nth-child(3){
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  
+  #hamburger.is-active .line:nth-child(1){
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  
+  #hamburger.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-10px) rotate(90deg);
+    -ms-transform: translateY(-10px) rotate(90deg);
+    -o-transform: translateY(-10px) rotate(90deg);
+    transform: translateY(-10px) rotate(90deg);
+  } */
 .landing-page {
     height: 100vh;
 }
@@ -142,11 +122,7 @@ header nav {
     font-size: 22px;
     line-height: 1.5;
 }
-.landing-page-container {
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
+
 .go-up {
     bottom: 20px;
     right: 10px;
@@ -155,48 +131,8 @@ header nav {
     background-color: #000000;
     color: #ffffff;
 }
-.about-card > * {
-    flex-basis: 70%;
-}
-.about-card:first-child {
-    flex-basis: 30%;
-}
-/* .skill-contain {
-    grid-template-columns: 1fr 1fr;
-} */
-.edu-grid {
-    grid-template-columns: 1fr 1fr;
-}
-.edu-head {
-    justify-content: space-between;
-}
-.skill-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-}
-.skill-grid hr {
-    height: 1px;
-    background-color: #000000;
-}
-.skill-cards {
-    text-align: center;
-}
-.skill-cards img {
-    width: 64px;
-}
-.project-grid {
-    grid-template-columns: 1fr 1fr;
-}
-.contact-info-grid {
-    grid-template-columns: 4fr 3fr;
-}
 .contact-page {
     background-color: var(--sec-color);
-}
-.contact-page .flex > * {
-    flex-basis: 50%;
-}
-.contact-text {
-    margin: 10px auto;
 }
 .contact-page .card,
 .contact-page input,
@@ -204,15 +140,6 @@ header nav {
     background-color: var(--white);
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-}
-.contact-page .card {
-    text-align: center;
-}
-.contact-page input,
-.contact-page textarea {
-    font-size: 16px;
 }
 .contact-page .btn {
     color: #fff;
@@ -233,21 +160,9 @@ footer {
     background-color: var(--primary-color);
     color: var(--sec-color);
 }
-.footer-div {
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-.social-media-icons a {
+footer a {
     /* background-color: var(--primary-color); */
     color: var(--sec-color);
-    padding: 2px 5px;
-}
-.social-media-icons a:first-of-type {
-    padding-left: 0px;
-}
-.social-media-icons a:last-of-type {
-    padding-right: 0px;
 }
 @media (max-width: 565px) {
     /* header {
@@ -259,24 +174,6 @@ footer {
     .footer-div {
         flex-direction: column;
     }
-    .edu-grid,
-    .project-grid,
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-    }
-    .card-img {
-        border-radius: 5px 5px 0 0;
-    }
-    .about-card {
-        flex-direction: column;
-    }
-    footer .container,
-    section .container {
-        padding: 40px 20px;
-    }
-    header .container {
-        padding: 10px 20px;
-    }
 }
 @media (max-width: 999.5px) {
     /* header {
@@ -286,17 +183,10 @@ footer {
         display: none;
     }
     .mobile-nav {
-        position: fixed;
         height: 100vh !important;
-        padding: 50px 20px;
         width: 70% !important;
         background-color: var(--sec-color);
-        color: var(--primary-color);
         transition: background-color 3s ease-in, width 3s ease-in;
-    } 
-    .mobile-nav a {
-        display: block;
-        padding: 15px 20px;
     } 
     #hamburger-btn {
         background-color: transparent;

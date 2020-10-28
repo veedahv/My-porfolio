@@ -82,7 +82,7 @@ section .container {
 }
 .headings {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 header {
     color: var(--primary-color);
@@ -170,12 +170,23 @@ header nav {
 .edu-head {
     justify-content: space-between;
 }
+.edu-title {
+    font-size: 16px;
+}
+.edu-text {
+    font-size: 15px;
+}
+.edu-time {
+    font-size: 12px;
+}
 .skill-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
-.skill-grid hr {
+.card hr {
     height: 1px;
     background-color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .skill-cards {
     text-align: center;
@@ -224,10 +235,12 @@ header nav {
 .contact-page a {
     color: var(--primary-color);
 }
-.contact-page i,
 .contact-page .contact-text-address,
 .contact-page a {
     font-size: 16px;
+}
+.contact-page i {
+    font-size: 26px;
 }
 footer {
     background-color: var(--primary-color);
@@ -254,7 +267,7 @@ footer {
         height: 10vh;
     } */
     .headings {
-        font-size: 28px;
+        font-size: 25px;
     }
     .footer-div {
         flex-direction: column;

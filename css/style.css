@@ -70,12 +70,21 @@ section .container {
 .w-100 {
     width: 100%;
 }
+a:hover {    
+    color: var(--spare-color);
+}
 .btn {
     color: #fff;
     background-color: var(--primary-color);
     border: none;
     padding: 8px 10px;
     border-radius: 5px;
+    transition: background-color .3s ease-in, color .3s ease-in;
+}
+.btn:hover,
+.btn:active {
+    color: var(--sec-color);
+    background-color: var(--spare-color);
 }
 .card .btn {
     margin-bottom: 120px;
@@ -103,6 +112,9 @@ header nav {
 .brand {
     font-size: 20px;
     font-weight: 700;
+}
+.active {
+    color: var(--spare-color);
 }
 .desktop-nav a {
     padding: 2px 10px;
@@ -136,6 +148,8 @@ header nav {
  
 .landing-page {
     height: 100vh;
+    background: rgba(0, 0, 0, 0.5) url('../images/landing.jpg') center center/cover no-repeat;
+    background-blend-mode: soft-light;
 }
 .landing-page h1 {
     max-width: 550px;
@@ -161,9 +175,12 @@ header nav {
 .about-card:first-child {
     flex-basis: 30%;
 }
-/* .skill-contain {
-    grid-template-columns: 1fr 1fr;
-} */
+.skills-page {
+    background-color: var(--sec-color);
+}
+.skills-page .card {
+    background-color: var(--white);
+}
 .edu-grid {
     grid-template-columns: 1fr 1fr;
 }
@@ -203,6 +220,15 @@ header nav {
 .contact-page {
     background-color: var(--sec-color);
 }
+.contact-page a:active,
+.contact-page a:hover {
+    color: var(--spare-color);
+}
+.contact-page .btn:active,
+.contact-page .btn:hover:hover {
+    color: var(--spare-color);
+    cursor: pointer;
+}
 .contact-page .flex > * {
     flex-basis: 50%;
 }
@@ -215,8 +241,11 @@ header nav {
     background-color: var(--white);
     border: none;
     border-radius: 5px;
+    margin-bottom: 12px;
+}
+.contact-page input,
+.contact-page textarea {
     padding: 10px 15px;
-    margin-bottom: 10px;
 }
 .contact-page .card {
     text-align: center;
@@ -255,6 +284,9 @@ footer {
     /* background-color: var(--primary-color); */
     color: var(--sec-color);
     padding: 2px 5px;
+}
+.social-media-icons a:hover {
+    color: var(--spare-color);
 }
 .social-media-icons a:first-of-type {
     padding-left: 0px;
@@ -302,10 +334,10 @@ footer {
         position: fixed;
         height: 100vh !important;
         padding: 50px 20px;
-        width: 70% !important;
+        width: 0%;
         background-color: var(--sec-color);
         color: var(--primary-color);
-        transition: background-color 3s ease-in, width 3s ease-in;
+        transition: width 3s ease-in;
     } 
     .mobile-nav a {
         display: block;
@@ -322,8 +354,8 @@ footer {
     .mobile-nav.show {
         display: block;
         z-index: 5;
+        width: 70%;
     }
-
 }
 @media (min-width: 1000px) {
     .social-media-icons .fa {

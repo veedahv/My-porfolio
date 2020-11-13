@@ -29,6 +29,7 @@ function isInViewport(el) {
 
     ) {
       el.classList.add('active');
+
     }else {
       el.classList.remove('active');
     }

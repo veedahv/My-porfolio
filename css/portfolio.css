@@ -228,24 +228,19 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-.about-page-header {
-    padding: 15x 10px;
-    /* background-color: #ffffff; */
-    /* color: #000000; */
-    border-radius: 8px;
-    /* margin-bottom: 10px; */
-    -webkit-column-break-inside: avoid;
-}
 .about-page-card {
-    padding: 15px 10px;
+    padding: 12px;
     /* background-color: #ffffff; */
     /* color: #000000; */
     border-radius: 8px;
     /* margin-bottom: 10px; */
     -webkit-column-break-inside: avoid;
+    display: flex;
+    justify-content: center;
 }
 .skill-card-text {
     transform: rotate(-45deg);
+    margin: auto;
 }
 .skills-page {
     background-color: var(--primary-color);

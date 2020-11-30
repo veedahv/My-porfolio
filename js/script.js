@@ -22,18 +22,18 @@ const hamburger = document.querySelector('#hamburger'),
 //   })
 // })
 
-const starBtn = document.createElement('button');
-const starIcon = document.createElement('span');
-const starTxt = document.createElement('span');
+// const starBtn = document.createElement('button');
+// const starIcon = document.createElement('span');
+// const starTxt = document.createElement('span');
 
-// copy and paste that star svg inplace of where i wrote starSvgHere
+// // copy and paste that star svg inplace of where i wrote starSvgHere
 
-starIcon.innerHTML = `starSvgHere`;
-starTxt.innerText = 'Star';
+// starIcon.innerHTML = `starSvgHere`;
+// starTxt.innerText = 'Star';
 
-starBtn.appendChild(starIcon);
-starBtn.appendChild(starTxt);
-repo.appendChild(starBtn);
+// starBtn.appendChild(starIcon);
+// starBtn.appendChild(starTxt);
+// repo.appendChild(starBtn);
 
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();

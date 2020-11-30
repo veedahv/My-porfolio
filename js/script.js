@@ -35,6 +35,11 @@ const hamburger = document.querySelector('#hamburger'),
 // starBtn.appendChild(starTxt);
 // repo.appendChild(starBtn);
 
+// node.isFork ? parentForkCount = node.parent.forkCount : parentForkCount = 0;
+
+// forkCountLi.innerText = forkCount + parentForkCount;
+
+
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     let elId = el.id;

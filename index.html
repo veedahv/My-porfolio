@@ -10,85 +10,92 @@
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <title>Victoria Akpan</title>
 </head>
 
 <body>
-    <header class="position-fixed w-100">
-        <div class="container">
-            <nav class="flex">
+    <header class="header w-100">
+        <div class="">
+            <nav class="flex w-100">
                 <a class="brand" href="index.html">Veedah</a>
-                <button class="" id="hamburger-btn">
+                <!-- <button class="" id="hamburger-btn">
                     <span class="">
                         <div class="hamburger" id="hamburger">
-                            <!-- <span class="line"></span>
                             <span class="line"></span>
-                            <span class="line"></span> -->
+                            <span class="line"></span>
+                            <span class="line"></span>
                         </div>
                     </span>
-                </button>
-                <div class="ml-auto desktop-nav" id="">
+                </button> -->
+                <div class="ml-auto mobile-none desktop-nav" id="">
                     <div class="navbar-nav">
-                        <a class=" active" href="index.html">Home</span></a>
-                        <a class="" href="#about-page">About Me</a>
-                        <a class="" href="#skills-page">Skills</a>
-                        <a class="" href="#project-page">My projects</a>
-                        <a class="" href="#contact-page">Contact Me</a>
+                        <a class="nav-link home-page active" href="index.html">Home</span></a>
+                        <a class="nav-link about-page" href="#about-page">About Me</a>
+                        <a class="nav-link skills-page" href="#skills-page">Skills</a>
+                        <a class="nav-link project-page" href="#project-page">My projects</a>
+                        <a class="nav-link contact-page" href="#contact-page">Contact Me</a>
                     </div>
+                </div>
+                <div class="header-social-icons mobile-none text-center flex mx-auto">
+                    <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer" class="flex">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="flex mid-a">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/veedahv" target="_blank" rel="noopener noreferrer" class="flex">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
                 </div>
             </nav>
         </div>
     </header>
-    <div class="mobile-nav position-fixed py-5">
-        <div class="position-absolute px-3 d-flex flex-column">
+    <!-- <div class="mobile-nav py-5">
+        <div class="px-3 d-flex flex-column">
             <a class="mobile-nav-link active" href="index.html">Home</span></a>
             <a class="mobile-nav-link " href="#about-page">About Me</a>
             <a class="mobile-nav-link " href="#skills-page">Skills</a>
             <a class="mobile-nav-link " href="#project-page">My projects</a>
             <a class="mobile-nav-link " href="#contact-page">Contact Me</a>
         </div>
-    </div>
+    </div> -->
     <main>
-        <section class="landing-page" id="landing-page">
+        <section class="home-page" id="home-page">
             <div class="container h-100">
-                <div class="landing-page-container flex align-items-center h-100">
+                <div class="home-page-container flex h-100">
                     <div class="">
-                        <p class="greet">Hi,</p>
-                        <p class="name">My name is Victoria Akpan.</p>
-                        <h1 class="">
-                            <span class="career-spec">I am a <b>front-end web developer.</b></span>
-                            <span class="career-spec">
+                        <small class="section-intro">FRONT-END WEB DEVELOPER</small>
+                        <h1 class="name">Hello, I'm Victoria!</h1>
+                        <p class="">
+                            <!-- <span class="career-spec">I am a <b>front-end web developer.</b></span> -->
+                            <span class="hom-intro">
                                 I use HTML, CSS & Javascript to bring designs to life.
                                 I specialize in creating clean, fast and accessible websites using
                                 appropriate front-end technologies and techniques.
                             </span>
-                        </h1>
+                        </p>
+                        <div class="home-btn-contain">
+                            <a href="./assets/VICTORIA AKPAN RESUME.pdf" class="btn" download>Download Resume</a>
+                            <a href="" class="btn">Hire Me</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <div class="container">
-            <div class="position-fixed go-up ">
-                <a href="#header" class="rounded-circle py-2 px-3">
-                    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-                </a>
-            </div> -->
-        </div>
         <section class="about-page" id="about-page">
-            <div class="container py-5">
+            <div class="container">
                 <div class="card mb-3">
                     <div class="flex about-card">
-                        <div class="col-md-5" data-aos="fade-up" data-aos-duration="700" data-aos-offset="30"
-                            data-aos-easing="ease-in-sine">
-                            <img src="./images/about-me.jpg" class="card-img h-100" alt="...">
-                        </div>
-                        <div class="col-md-7" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700"
-                            data-aos-easing="ease-in-sine">
-                            <div class="card-body">
+                        <div class=" ">
+                            <div class="">
                                 <h2 class="card-title headings p-1">
-                                    More about me
+                                    Want to know more about me?
                                 </h2>
+                                <p class="card-text">
+                                    I am an undergraduate student of Computer Engineering at the University of Uyo.
+                                    I am currently in my third year. I started coding 6 months ago.
+                                </p>
                                 <p class="card-text">
                                     While not creating websites, I enjoy watching movies, playing
                                     games, reading good books and also spending time with friends.
@@ -97,6 +104,25 @@
                                     Whenever I am stressed out, I spend my time cooking,
                                     baking, eating and painting my nails to relieve the stress.
                                 </p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="skill-card-contain flex">
+                                <div class="about-card-skill">
+                                    <div class="about-page-header">
+                                        <h2 class="skill-card-text">Soft skills</h2>
+                                        <!-- <p class="skill-card-text">Team work</p> -->
+                                    </div>
+                                    <div class="about-page-card">
+                                        <p class="skill-card-text">Team work</p>
+                                    </div>
+                                    <div class="about-page-card">
+                                        <p class="skill-card-text">Team work</p>
+                                    </div>
+                                    <div class="about-page-card">
+                                        <p class="skill-card-text">Team work</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,60 +182,65 @@
                                 <div class="card-body">
                                     <div class="edu-head flex">
                                         <h3 class="edu-title">Tech 101</h3>
-                                        <h4 class="edu-time">March 2020</h4>
+                                        <h4 class="edu-time">Mar 2020</h4>
                                     </div>
-                                    <hr>                                    
+                                    <hr>
                                     <p class="edu-text">
-                                        Learnt basic html and css skills
+                                        Start basic html and css skills.
                                     </p>
+                                    <button type="button" class="certificate-btn">View Certificate</button>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="edu-head flex">
                                         <h3 class="edu-title">FreeCodeCamp</h3>
-                                        <h4 class="edu-time">September 2020</h4>
+                                        <h4 class="edu-time">Sep 2020</h4>
                                     </div>
                                     <hr>
                                     <p class="edu-text">
                                         Responsive web designs
                                     </p>
+                                    <button type="button" class="certificate-btn">View Certificate</button>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="edu-head flex">
                                         <h3 class="edu-title">Web development</h3>
-                                        <h4 class="edu-time">August 2020 - September 2020</h4>
+                                        <h4 class="edu-time">Aug - Sep 2020</h4>
                                     </div>
                                     <hr>
                                     <p class="edu-text">
-                                        Learnt basic html and css skills
+                                        Learnt front-end development at the roothub.
                                     </p>
+                                    <button type="button" class="certificate-btn">View Certificate</button>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="edu-head flex">
                                         <h3 class="edu-title">TISS</h3>
-                                        <h4 class="edu-time">September 2015 - July 2017</h4>
+                                        <h4 class="edu-time">Sep 2015 - Jul 2017</h4>
                                     </div>
                                     <hr>
                                     <p class="edu-text">
                                         Completed high school
                                     </p>
+                                    <button type="button" class="certificate-btn">View Certificate</button>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="edu-head flex">
                                         <h3 class="edu-title">University of Uyo</h3>
-                                        <h4 class="edu-time">September 2017 - Till date</h4>
+                                        <h4 class="edu-time">Sep 2017 - Till date</h4>
                                     </div>
                                     <hr>
                                     <p class="edu-text">
                                         Studying for a B.Sc for Computer Engineering
                                     </p>
+                                    <button type="button" class="certificate-btn">View Certificate</button>
                                 </div>
                             </div>
                         </div>
@@ -219,18 +250,25 @@
         </section>
         <section class="project-page" id="project-page">
             <div class="container py-5">
-                <div>
-                    <h2 class="headings">
+                <!-- <div>
+                    <h2 class="grid headings">
                         Completed Projects
                     </h2>
-                </div>
+                </div> -->
                 <div>
                     <div>
-                        <div class="grid project-grid">
-                            <div class="col-sm-6 col-xm-6 col-md-6 my-3">
-                                <div class="card h-100">
-                                    <img src="./images/hotel-booking.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                        <div class="project-grid">
+                            <div class="project-grid-card">
+                                <div>
+                                    <h2 class="headings">
+                                        Completed Projects
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="project-grid-card project-card">
+                                <div class="h-100">
+                                    <img src="./images/hotel-booking.jpg" class="h-100 w-100" alt="...">
+                                    <div class="card-details w-100">
                                         <h3 class="card-title p-1">Hotel Booking</h3>
                                         <p class="card-text">
                                             I created a hotel booking app using just html and css.</p>
@@ -238,10 +276,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-xm-6 col-md-6 my-3 h-100">
-                                <div class="card">
-                                    <img src="./images/budget-app.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                            <div class="project-grid-card project-card">
+                                <div class="">
+                                    <img src="./images/budget-app.jpg" class="h-100 w-100" alt="...">
+                                    <div class="card-details w-100">
                                         <h3 class="card-title p-1">Budget App</h3>
                                         <p class="card-text">
                                             I created a shopping list budget app using html, css and js.
@@ -250,23 +288,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-xm-6 col-md-6 my-3">
-                                <div class="card h-100">
-                                    <img src="./images/weather-app.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                            <div class="project-grid-card project-card">
+                                <div class="h-100">
+                                    <img src="./images/weather-app.jpg" class="h-100 w-100" alt="...">
+                                    <div class="card-details w-100">
                                         <h3 class="card-title p-1">Dashboard</h3>
                                         <p class="card-text">
                                             I implemented a dashboard using html, css, bootstrap and js.
-                                            In this project, I made us of local stoeage to store variables. 
+                                            In this project, I made us of local stoeage to store variables.
                                         </p>
                                         <a href="https://vee-ecommerce-dashboard.netlify.app/" class="btn">Live Demo</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-xm-6 col-md-6 my-3">
-                                <div class="card h-100">
-                                    <img src="./images/weather-app.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                            <div class="project-grid-card project-card">
+                                <div class="h-100">
+                                    <img src="./images/weather-app.jpg" class="h-100 w-100" alt="...">
+                                    <div class="card-details w-100">
                                         <h3 class="card-title p-1">Weather App</h3>
                                         <p class="card-text">
                                             I made use of api in this site.
@@ -275,72 +313,27 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- <div class="">
-                            <div class=" text-center">
-                                <a href="" class="mx-auto">View More</a>
+                            <div class="project-grid-card">
+                                <div class="">
+                                    <div class=" text-center">
+                                        <a href="" class="mx-auto">Check out my Github profile</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section class="hire-page">
-            <div class="container py-5">
-                <div>
-                    <h2 class="headings">
-                        Why Hire Me
-                    </h2>
-                </div>
-                <div>
-                    <div>
-                        <div class="row">
-                            <div class="col-sm-4 col-xm-4 col-md-4 my-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title p-1">Attention to details</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xm-4 col-md-4 my-2">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title p-1">Good at researching</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xm-4 col-md-4 my-2">
-                                <div class="card">
-                                    <div class="card-body p-1">
-                                        <h5 class="card-title">Active listener</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <button>HIRE ME</button>
-                </div>
-            </div>
-        </section> -->
         <section class="contact-page" id="contact-page">
-            <div class="container py-5">
-                <div>
-                    <h2 class="headings">
-                        Get In Touch With Me
-                    </h2>
-                </div>
+            <div class="container">
                 <div class="contact-info ">
-                    <!-- <h1>Contact Us</h1> -->
-                    <div class="grid contact-info-grid my-3">
-                        <div class="col-md-7 col-sm-7 my-2">
+                    <h1>Contact Me</h1>
+                    <p>Have an idea you want to bring to life?</p>
+                    <p>Or you want to say hi?</p>
+                    <p>Why not send me a message?</p>
+                    <div class="grid contact-info-grid">
+                        <div class="">
                             <form action="post" class="text-center">
                                 <label for="name" class="w-100">
                                     <input type="text" class="py-1 px-2 w-100" name="name" id="name" placeholder="Name">
@@ -356,15 +349,13 @@
                                 <label for="message" class="w-100">
                                     <textarea rows="5" class="w-100 py-1 px-2 w-100" name="message" id="message"
                                         placeholder="Message"></textarea>
-                                    <!-- <input type="text" class="py-1 px-2" name="message" id="message" placeholder="Message"> -->
                                 </label>
                                 <label for="submit" class="py-2">
-                                    <input type="submit" class="btn button py-2 px-3 m-auto" value="SEND MESSAGE">
+                                    <button type="submit" class="button btn">SEND MESSAGE</button>
                                 </label>
                             </form>
-                            <!-- <button type="submit" class="button"></button> -->
                         </div>
-                        <div class="contact-info col-md-5 col-sm-5 my-2">
+                        <div class="contact-info">
                             <div class="contact-grid text-center">
                                 <div class="card">
                                     <div class="card-body">
@@ -393,34 +384,64 @@
                 </div>
             </div>
         </section>
+        <section class="connect-page" id="connect-page">
+            <div class="container">
+                <div class="contact-info ">
+                    <div class="flex connect-info-contain">
+                        <div class="">
+                            <h1>Feel Free To Connect With Me</h1>
+                        </div>
+                        <!-- <div class="contact-info">
+                            <div class="contact-grid text-center"> -->
+                        <div class="social-media-icons text-center">
+                            <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer"
+                                class="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/veedahv" target="_blank" rel="noopener noreferrer" class="">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <!-- </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class=" py-4">
         <div class="container">
-            <div class="flex justify-content-between footer-div">
-                <div class="py-2">
-                    <div class="social-media-icons text-center mx-auto">
-                        <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer"
-                            class="px-1">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://github.com/veedahv" target="_blank" rel="noopener noreferrer" class="px-1">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a> -->
+            <div class="flex footer-div">
+                <div class="">
+                    <div class="">
+                        <p>
+                            Call:
+                            <a href="tel:+23470870050">+23470870050</a>
+                        </p>
+                    </div>
+                    <div class="">
+                        <p>
+                            Send a mail:
+                            <a href="mailto:veedahv55@gmail.com">veedahv55@gmail.com</a>
+                        </p>
                     </div>
                 </div>
-                <p class="py-2 text-center">
+                <div class="attribution">
+                    Icons made by 
+                    <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from 
+                    <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                </div>
+                <!-- https://www.flaticon.com/search?word=team&author_id=190 -->
+                <p class="text-center">
                     &#169; Veedah || 2020
                 </p>
             </div>
@@ -431,7 +452,7 @@
         AOS.init();
     </script>
     <script src="js/script.js"></script>
-    <script>
+    <!-- <script>
         (function() {
   'use strict';
 
@@ -448,7 +469,7 @@
   };
 })();
 
-    </script>
+    </script> -->
 </body>
 
 </html>

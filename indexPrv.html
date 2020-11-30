@@ -10,25 +10,25 @@
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Victoria Akpan</title>
 </head>
 
 <body>
-    <header class="w-100">
+    <header class="position-fixed w-100">
         <div class="container">
-            <nav class="flex w-100">
+            <nav class="flex">
                 <a class="brand" href="index.html">Veedah</a>
-                <!-- <button class="" id="hamburger-btn">
+                <button class="" id="hamburger-btn">
                     <span class="">
                         <div class="hamburger" id="hamburger">
+                            <!-- <span class="line"></span>
                             <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                            <span class="line"></span> -->
                         </div>
                     </span>
-                </button> -->
-                <div class="ml-auto mobile-none desktop-nav" id="">
+                </button>
+                <div class="ml-auto desktop-nav" id="">
                     <div class="navbar-nav">
                         <a class=" active" href="index.html">Home</span></a>
                         <a class="" href="#about-page">About Me</a>
@@ -37,21 +37,10 @@
                         <a class="" href="#contact-page">Contact Me</a>
                     </div>
                 </div>
-                <div class="header-social-icons mobile-none text-center flex mx-auto">
-                    <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer" class="flex">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="flex mid-a">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://github.com/veedahv" target="_blank" rel="noopener noreferrer" class="flex">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                </div>
             </nav>
         </div>
     </header>
-    <!-- <div class="mobile-nav py-5">
+    <div class="mobile-nav position-fixed py-5">
         <div class="position-absolute px-3 d-flex flex-column">
             <a class="mobile-nav-link active" href="index.html">Home</span></a>
             <a class="mobile-nav-link " href="#about-page">About Me</a>
@@ -59,45 +48,47 @@
             <a class="mobile-nav-link " href="#project-page">My projects</a>
             <a class="mobile-nav-link " href="#contact-page">Contact Me</a>
         </div>
-    </div> -->
+    </div>
     <main>
-        <section class="home-page" id="home-page">
+        <section class="landing-page" id="landing-page">
             <div class="container h-100">
-                <div class="home-page-container flex h-100">
+                <div class="landing-page-container flex align-items-center h-100">
                     <div class="">
-                        <small class="section-intro">FRONT-END WEB DEVELOPER</small>
-                        <h1 class="name">Hello, I'm Victoria!</h1>
-                        <p class="">
-                            <!-- <span class="career-spec">I am a <b>front-end web developer.</b></span> -->
-                            <span class="hom-intro">
+                        <p class="greet">Hi,</p>
+                        <p class="name">My name is Victoria Akpan.</p>
+                        <h1 class="">
+                            <span class="career-spec">I am a <b>front-end web developer.</b></span>
+                            <span class="career-spec">
                                 I use HTML, CSS & Javascript to bring designs to life.
                                 I specialize in creating clean, fast and accessible websites using
                                 appropriate front-end technologies and techniques.
                             </span>
-                        </p>
-                        <div class="home-btn-contain">
-                            <a href="" class="btn">Download Resume</a>
-                            <a href="" class="btn">Hire Me</a>
-                        </div>
+                        </h1>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- <div class="container">
+            <div class="position-fixed go-up ">
+                <a href="#header" class="rounded-circle py-2 px-3">
+                    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                </a>
+            </div> -->
+        </div>
         <section class="about-page" id="about-page">
             <div class="container py-5">
                 <div class="card mb-3">
                     <div class="flex about-card">
-                        <div class=" ">
+                        <div class="col-md-5" data-aos="fade-up" data-aos-duration="700" data-aos-offset="30"
+                            data-aos-easing="ease-in-sine">
+                            <img src="./images/about-me.jpg" class="card-img h-100" alt="...">
+                        </div>
+                        <div class="col-md-7" data-aos="fade-up" data-aos-offset="30" data-aos-duration="700"
+                            data-aos-easing="ease-in-sine">
                             <div class="card-body">
                                 <h2 class="card-title headings p-1">
-                                    Want to know more about me?
+                                    More about me
                                 </h2>
-                                <p class="card-text">
-                                    I am an undergraduate student of Computer Engineering at the University of Uyo.
-                                    I am currently in my third year. I started been coding 6 months ago. So far my
-                                    experience
-                                    has been great so far.
-                                </p>
                                 <p class="card-text">
                                     While not creating websites, I enjoy watching movies, playing
                                     games, reading good books and also spending time with friends.
@@ -108,28 +99,11 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="">
-                            <div class="about-card-skill">
-                                <h2>Soft skills</h2>
-                                <div class="about-page-card">
-                                    <p>Team work</p>
-                                </div>
-                                <div class="about-page-card">
-                                    <p>Team work</p>
-                                </div>
-                                <div class="about-page-card">
-                                    <p>Team work</p>
-                                </div>
-                                <div class="about-page-card">
-                                    <p>Team work</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section class="skills-page" id="skills-page">
+        <section class="skills-page" id="skills-page">
             <div class="container py-5">
                 <div class="grid skill-contain">
                     <div class="col-md-6">
@@ -184,9 +158,9 @@
                                         <h3 class="edu-title">Tech 101</h3>
                                         <h4 class="edu-time">March 2020</h4>
                                     </div>
-                                    <hr>
+                                    <hr>                                    
                                     <p class="edu-text">
-                                        Start basic html and css skills.
+                                        Learnt basic html and css skills
                                     </p>
                                 </div>
                             </div>
@@ -210,7 +184,7 @@
                                     </div>
                                     <hr>
                                     <p class="edu-text">
-                                        Learnt front-end development at the roothub.
+                                        Learnt basic html and css skills
                                     </p>
                                 </div>
                             </div>
@@ -242,28 +216,21 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="project-page" id="project-page">
             <div class="container py-5">
-                <!-- <div>
-                    <h2 class="grid headings">
+                <div>
+                    <h2 class="headings">
                         Completed Projects
                     </h2>
-                </div> -->
+                </div>
                 <div>
                     <div>
-                        <div class="project-grid">
-                            <div class="project-grid-card">
-                                <div>
-                                    <h2 class="headings">
-                                        Completed Projects
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="project-grid-card project-card">
-                                <div class="h-100">
-                                    <img src="./images/hotel-booking.jpg" class="h-100 w-100" alt="...">
-                                    <div class="card-details w-100">
+                        <div class="grid project-grid">
+                            <div class="col-sm-6 col-xm-6 col-md-6 my-3">
+                                <div class="card h-100">
+                                    <img src="./images/hotel-booking.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
                                         <h3 class="card-title p-1">Hotel Booking</h3>
                                         <p class="card-text">
                                             I created a hotel booking app using just html and css.</p>
@@ -271,10 +238,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-grid-card project-card">
-                                <div class="">
-                                    <img src="./images/budget-app.jpg" class="h-100 w-100" alt="...">
-                                    <div class="card-details w-100">
+                            <div class="col-sm-6 col-xm-6 col-md-6 my-3 h-100">
+                                <div class="card">
+                                    <img src="./images/budget-app.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
                                         <h3 class="card-title p-1">Budget App</h3>
                                         <p class="card-text">
                                             I created a shopping list budget app using html, css and js.
@@ -283,23 +250,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-grid-card project-card">
-                                <div class="h-100">
-                                    <img src="./images/weather-app.jpg" class="h-100 w-100" alt="...">
-                                    <div class="card-details w-100">
+                            <div class="col-sm-6 col-xm-6 col-md-6 my-3">
+                                <div class="card h-100">
+                                    <img src="./images/weather-app.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
                                         <h3 class="card-title p-1">Dashboard</h3>
                                         <p class="card-text">
                                             I implemented a dashboard using html, css, bootstrap and js.
-                                            In this project, I made us of local stoeage to store variables.
+                                            In this project, I made us of local stoeage to store variables. 
                                         </p>
                                         <a href="https://vee-ecommerce-dashboard.netlify.app/" class="btn">Live Demo</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-grid-card project-card">
-                                <div class="h-100">
-                                    <img src="./images/weather-app.jpg" class="h-100 w-100" alt="...">
-                                    <div class="card-details w-100">
+                            <div class="col-sm-6 col-xm-6 col-md-6 my-3">
+                                <div class="card h-100">
+                                    <img src="./images/weather-app.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
                                         <h3 class="card-title p-1">Weather App</h3>
                                         <p class="card-text">
                                             I made use of api in this site.
@@ -308,19 +275,62 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-grid-card">
-                                <div class="">
-                                    <div class=" text-center">
-                                        <a href="" class="mx-auto">Check out my Github profile</a>
+                        </div>
+                        <!-- <div class="">
+                            <div class=" text-center">
+                                <a href="" class="mx-auto">View More</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="hire-page">
+            <div class="container py-5">
+                <div>
+                    <h2 class="headings">
+                        Why Hire Me
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4 col-xm-4 col-md-4 my-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title p-1">Attention to details</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xm-4 col-md-4 my-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title p-1">Good at researching</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xm-4 col-md-4 my-2">
+                                <div class="card">
+                                    <div class="card-body p-1">
+                                        <h5 class="card-title">Active listener</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <button>HIRE ME</button>
+                </div>
             </div>
-        </section>
-        <!-- <section class="contact-page" id="contact-page">
+        </section> -->
+        <section class="contact-page" id="contact-page">
             <div class="container py-5">
                 <div>
                     <h2 class="headings">
@@ -328,7 +338,7 @@
                     </h2>
                 </div>
                 <div class="contact-info ">
-                    <h1>Contact Us</h1>
+                    <!-- <h1>Contact Us</h1> -->
                     <div class="grid contact-info-grid my-3">
                         <div class="col-md-7 col-sm-7 my-2">
                             <form action="post" class="text-center">
@@ -346,11 +356,13 @@
                                 <label for="message" class="w-100">
                                     <textarea rows="5" class="w-100 py-1 px-2 w-100" name="message" id="message"
                                         placeholder="Message"></textarea>
+                                    <!-- <input type="text" class="py-1 px-2" name="message" id="message" placeholder="Message"> -->
                                 </label>
                                 <label for="submit" class="py-2">
-                                    <button type="submit" class="button">SEND MESSAGE</button>
+                                    <input type="submit" class="btn button py-2 px-3 m-auto" value="SEND MESSAGE">
                                 </label>
                             </form>
+                            <!-- <button type="submit" class="button"></button> -->
                         </div>
                         <div class="contact-info col-md-5 col-sm-5 my-2">
                             <div class="contact-grid text-center">
@@ -380,7 +392,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
     <footer class=" py-4">
         <div class="container">
@@ -403,6 +415,9 @@
                         <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
+                        <!-- <a href="http://" target="_blank" rel="noopener noreferrer" class="px-1">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a> -->
                     </div>
                 </div>
                 <p class="py-2 text-center">
@@ -416,7 +431,7 @@
         AOS.init();
     </script>
     <script src="js/script.js"></script>
-    <!-- <script>
+    <script>
         (function() {
   'use strict';
 
@@ -433,7 +448,7 @@
   };
 })();
 
-    </script> -->
+    </script>
 </body>
 
 </html>

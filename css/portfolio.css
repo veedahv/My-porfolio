@@ -329,7 +329,7 @@ a:hover {
     display: block;
 }
 .contact-info-grid {
-    grid-template-columns: 4fr 3fr;
+    grid-template-columns: 1fr 1fr;
 }
 .contact-page {
     background-color: var(--primary-color);

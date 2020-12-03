@@ -1,11 +1,16 @@
 const hamburger = document.querySelector('#hamburger'),
- hamburgerBtn = document.querySelector('#hamburger-btn'),
+  hamburgerBtn = document.querySelector('#hamburger-btn'),
   hamburgerClass = document.querySelector('.hamburger'),
   mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   navLinks = document.querySelectorAll('.nav-link'),
   sections = document.querySelectorAll('section'),
   header = document.querySelector('header'),
+  certificateShow = document.querySelector('.certificate-img-contain'),
+  certificateShowImg = document.querySelector('.certificate-img'),
+  viewCertificate = document.querySelector('.view-certificate'),
+  certificateBtns = document.querySelectorAll('.certificate-btn'),
   mobileNav = document.querySelector('.mobile-nav');
+// let viewCertificate = document.querySelector('.view-certificate');
 // hamburgerBtn.addEventListener('click', function (event) {
 //   console.log('working');
 //   hamburgerClass.classList.toggle('close');
@@ -41,24 +46,61 @@ const hamburger = document.querySelector('#hamburger'),
 
 
 function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    let elId = el.id;
-      console.log(rect.top);
-      console.log(rect.bottom);
-      console.log(elId);
-    if (
-      // rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= 100
-      // rect.top <= document.documentElement.scrollTop || document.body.scrollTop
+  const rect = el.getBoundingClientRect();
+  let elId = el.id;
+  // console.log(rect.top);
+  // console.log(rect.bottom);
+  // console.log(elId);
+  if (
+    // rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.top <= 100
+    // rect.top <= document.documentElement.scrollTop || document.body.scrollTop
 
-    ) {
-    navLinks.forEach( (navLink) => {
+  ) {
+    navLinks.forEach((navLink) => {
       navLink.classList.contains(el.id) ? navLink.classList.add('active') : navLink.classList.remove('active');
     })
-    }
+  }
 }
+certificateBtns.forEach(certificateBtn => {
+  certificateBtn.addEventListener('click', () => {
+    let getImg = certificateBtn.closest('.card-body').querySelector('img');
+    console.log(certificateBtn.closest('.card-body').querySelector('img'));
+    viewCertificate.src = getImg.src;
+    viewCertificate.alt = getImg.alt;
+    certificateShow.style.display = 'flex';
+    console.log(certificateShow);
+  })
+})
+document.addEventListener('click', (event) => {
+    let isClickInside0 = certificateBtns[0].contains(event.target);
+    let isClickInside1 = certificateBtns[1].contains(event.target);
+    let isClickInside2 = certificateBtns[2].contains(event.target);
+    let isClickInside3 = certificateBtns[3].contains(event.target);
+    let isClickInside4 = certificateBtns[4].contains(event.target);
+    let isClickInsideCertificate = certificateShowImg.contains(event.target);
+  
+      
+      if (!isClickInside0 && !isClickInside1 && !isClickInside2 && !isClickInside3 && !isClickInside4 && !isClickInsideCertificate) {
+        certificateShow.style.display = 'none';   
+      }
+    
+  // certificateBtns.forEach(certificateBtn => {
+  //   let isClickInside = certificateBtn.contains(event.target);
+  //   let isClickInsideCertificate = certificateShowImg.contains(event.target);
+  
+      
+  //     if (!isClickInside && !isClickInsideCertificate) {
+  //       certificateShow.style.display = 'none';
+  //       console.log(isClickInside);
+  //       console.log(isClickInsideLi);
+  //       console.log(event.target);      
+  //     }
+    
+  // })
+});
 document.addEventListener('scroll', () => {
-  sections.forEach( (section) => {
+  sections.forEach((section) => {
     isInViewport(section);
   })
 });

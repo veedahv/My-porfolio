@@ -145,7 +145,7 @@ a:hover {
     font-weight: 600;
     border-bottom: 2px solid #fff;
 }
-.desktop-nav a {
+.nav-link {
     padding: 6px 10px;
 }
 .header-social-icons a {
@@ -164,10 +164,15 @@ a:hover {
     background-color: var(--sec-color);
     color: var(--primary-color);
 }
+.navigation-btn,
+.navigation-background,
+.navigation-contain,
+.navigation-checkbox,
 #hamburger-btn,
 .mobile-nav {
     display: none;
 }
+
 #hamburger-btn {
     width: 30px;
     height: 30px;
@@ -272,7 +277,7 @@ a:hover {
     transform: rotate(-45deg);
     margin: auto;
 }
-.skills-page {
+#skills-page {
     background-color: var(--primary-color);
 }
 .skills-page .card {
@@ -379,7 +384,7 @@ a:hover {
 .contact-info-grid {
     grid-template-columns: 1fr 1fr;
 }
-.contact-page {
+#contact-page {
     background-color: var(--primary-color);
 }
 .contact-page a:active,
@@ -468,10 +473,145 @@ footer {
 .social-media-icons a:last-of-type {
     padding-right: 0px;
 }
-@media (max-width: 565px) {
+@media (max-width: 768px) {
+    .header,
+    .container {
+        padding: 10px 25px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #hamburger-btn,
+    .mobile-nav {
+        display: block;
+    }
+    .nav-link {
+        padding: 6px 10px;
+        margin-bottom: 15px;
+    }
+    .brand {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .mobile-social-icons {
+        margin-top: 20px;
+    }
+    .headings {
+        font-size: 25px;
+    }
+    .navigation-btn {
+        background-color: var(--white);
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 25;
+        position: relative;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+    }
+    .navigation-background {
+        height: 35px;
+        width: 35px;
+        position: fixed;
+        display: flex;
+        z-index: 12;
+        background-image: radial-gradient(var(--primary-color), var(--sec-color));
+        top: 12px;
+        right: 27px;
+        border-radius: 50%;
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    .navigation-contain {
+        position: fixed;
+        /* width: 100vw; */
+        width: 0;
+        opacity: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        z-index: 20;  
+        text-align: center;  
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navigation-checkbox:checked ~ .navigation-background {
+        transform: scale(80);
+    }
+    .navigation-checkbox:checked ~ .navigation-contain {
+        width: 100%;
+        opacity: 1;
+    }
+    .navigation-icon {
+        position: relative;
+    }
+    .navigation-icon,
+    .navigation-icon::after,
+    .navigation-icon::before {
+        width: 25px;
+        height: 2px;
+        background-color: var(--primary-color);
+        display: inline-block;
+    }
+    .navigation-icon::after,
+    .navigation-icon::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+    .navigation-icon::after {
+        top: 7px;
+    }
+    .navigation-icon::before {
+        top: -7px;
+    }
+    .navigation-btn:hover .navigation-icon::before {
+        top: -8px;
+    }
+    .navigation-btn:hover .navigation-icon::after {
+        top: 8px;
+    }
+    .navigation-checkbox:checked + .navigation-btn .navigation-icon {
+        background-color: transparent;
+    }
+    .navigation-checkbox:checked + .navigation-btn .navigation-icon::before {
+        top: 0; 
+        transform: rotate(135deg);
+    }
+    .navigation-checkbox:checked + .navigation-btn .navigation-icon::after {
+        top: 0; 
+        transform: rotate(-135deg);
+    }
+    #home-page h1,
+    .headings {
+        font-size: 20px;
+    }
+    .home-intro {
+        font-size: 15px;
+    }
+    
+    .mobile-none {
+        display: none;
+    }
+    
+    .social-media-icons {
+        margin: auto;
+    }
+}
+@media (max-width: 568px) {
     .header,
     .container {
         padding: 10px 10px;
+    }
+    p {
+        font-size: 16px;
     }
     #hamburger-btn,
     .mobile-nav {
@@ -483,6 +623,9 @@ footer {
     }
     .headings {
         font-size: 25px;
+    }
+    .navigation-background {
+        right: 12px;
     }
     #home-page h1,
     .headings {

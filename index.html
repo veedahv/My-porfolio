@@ -19,18 +19,52 @@
         <div class="">
             <nav class="flex w-100">
                 <a class="brand" href="index.html">Veedah</a>
-                <button class="" id="hamburger-btn">
-                    <span class="">
-                        <div class="hamburger" id="hamburger">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                <div class="navigation">
+                    <input type="checkbox" name="" class="navigation-checkbox" id="nav-toggle">
+                    <label for="nav-toggle" class="navigation-btn">
+                        <span class="navigation-icon">&nbsp;</span>
+                    </label>
+                    <div class="navigation-background">&nbsp;</div>
+                    <div class="navigation-contain">
+                        <ul class="navigation-list">
+                            <li class="navigation__item">
+                                <!-- <a href="#" class="navigation__link">About Natours</a> -->
+                                <a class="nav-link home-page active" href="index.html">Home</a>
+                            </li>
+                            <li class="navigation__item">
+                                <!-- <a href="#" class="navigation__link">Your benefit</a> -->
+                                <a class="nav-link about-page" href="#about-page">About Me</a>
+                            </li>
+                            <li class="navigation__item">
+                                <!-- <a href="#" class="navigation__link">Popular tours</a> -->
+                                <a class="nav-link skills-page" href="#skills-page">Skills</a>
+                            </li>
+                            <li class="navigation__item">
+                                <!-- <a href="#" class="navigation__link">Stories</a> -->
+                                <a class="nav-link project-page" href="#project-page">My projects</a>
+                            </li>
+                            <li class="navigation__item">
+                                <!-- <a href="#" class="navigation__link">Book now</a> -->
+                                <a class="nav-link contact-page" href="#contact-page">Contact Me</a>
+                            </li>
+                        </ul>
+                        <div class="header-social-icons mobile-social-icons text-center flex mx-auto">
+                            <a href="https://twitter.com/me_veey?s=03" target="_blank" rel="noopener noreferrer" class="flex">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/victoria-akpan-3726361b0" target="_blank"
+                                rel="noopener noreferrer" class="flex mid-a">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/veedahv" target="_blank" rel="noopener noreferrer" class="flex">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
                         </div>
-                    </span>
-                </button>
+                    </div>
+                </div>
                 <div class="ml-auto mobile-none desktop-nav" id="">
                     <div class="navbar-nav">
-                        <a class="nav-link home-page active" href="index.html">Home</span></a>
+                        <a class="nav-link home-page active" href="index.html">Home</a>
                         <a class="nav-link about-page" href="#about-page">About Me</a>
                         <a class="nav-link skills-page" href="#skills-page">Skills</a>
                         <a class="nav-link project-page" href="#project-page">My projects</a>
@@ -81,7 +115,7 @@
                                 <i class="fa fa-download" aria-hidden="true"></i>
                                 Resume
                             </a>
-                            <a href="" class="home-btn btn">
+                            <a href="#contact-page" class="home-btn btn">
                                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                                 Hire Me
                             </a>
@@ -235,7 +269,7 @@
                                     <p class="edu-text">
                                         Learnt front-end development at the roothub.
                                     </p>
-                                    <img src="./assets/certificate/web responsive certificate.PNG"
+                                    <img src="./assets/certificate/roothub-certificate.jpg"
                                         class="w-100 certificate-img-tag" alt="web responsive certificate">
                                     <button type="button" class="certificate-btn">View Certificate</button>
                                 </div>
@@ -263,7 +297,7 @@
                                     </div>
                                     <hr>
                                     <p class="edu-text">
-                                        Studying for a B.Sc for Computer Engineering
+                                        Studying for a B.Eng for Computer Engineering
                                     </p>
                                     <img src="./assets/certificate/web responsive certificate.PNG"
                                         class="w-100 certificate-img-tag" alt="web responsive certificate">

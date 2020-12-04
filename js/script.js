@@ -1,7 +1,4 @@
-const hamburger = document.querySelector('#hamburger'),
-  hamburgerBtn = document.querySelector('#hamburger-btn'),
-  hamburgerClass = document.querySelector('.hamburger'),
-  mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   navLinks = document.querySelectorAll('.nav-link'),
   sections = document.querySelectorAll('section'),
   header = document.querySelector('header'),
@@ -9,41 +6,8 @@ const hamburger = document.querySelector('#hamburger'),
   certificateShow = document.querySelector('.certificate-img-contain'),
   certificateShowImg = document.querySelector('.certificate-img'),
   viewCertificate = document.querySelector('.view-certificate'),
-  certificateBtns = document.querySelectorAll('.certificate-btn'),
-  mobileNav = document.querySelector('.mobile-nav');
-// let viewCertificate = document.querySelector('.view-certificate');
-// hamburgerBtn.addEventListener('click', function (event) {
-//   console.log('working');
-//   hamburgerClass.classList.toggle('close');
-//   mobileNav.classList.toggle('show');
-// })
-// mobileNavLinks.forEach(function (mobileNavLink) {
-//   mobileNavLink.addEventListener('click', function (event) {
-//     let checkShow = mobileNav.classList.contains('show');
-//     console.log(checkShow)
-//     if (checkShow) {
-//       hamburgerClass.classList.toggle('close');
-//       mobileNav.classList.remove('show');
-//     }
-//   })
-// })
+  certificateBtns = document.querySelectorAll('.certificate-btn');
 
-// const starBtn = document.createElement('button');
-// const starIcon = document.createElement('span');
-// const starTxt = document.createElement('span');
-
-// // copy and paste that star svg inplace of where i wrote starSvgHere
-
-// starIcon.innerHTML = `starSvgHere`;
-// starTxt.innerText = 'Star';
-
-// starBtn.appendChild(starIcon);
-// starBtn.appendChild(starTxt);
-// repo.appendChild(starBtn);
-
-// node.isFork ? parentForkCount = node.parent.forkCount : parentForkCount = 0;
-
-// forkCountLi.innerText = forkCount + parentForkCount;
 
 const resizeHeight = () => {
   aboutCards.forEach(aboutCard => {

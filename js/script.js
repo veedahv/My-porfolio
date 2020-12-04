@@ -5,6 +5,7 @@ const hamburger = document.querySelector('#hamburger'),
   navLinks = document.querySelectorAll('.nav-link'),
   sections = document.querySelectorAll('section'),
   header = document.querySelector('header'),
+  aboutCards = document.querySelectorAll('.about-page-card'),
   certificateShow = document.querySelector('.certificate-img-contain'),
   certificateShowImg = document.querySelector('.certificate-img'),
   viewCertificate = document.querySelector('.view-certificate'),
@@ -44,6 +45,20 @@ const hamburger = document.querySelector('#hamburger'),
 
 // forkCountLi.innerText = forkCount + parentForkCount;
 
+const resizeHeight = () => {
+  aboutCards.forEach(aboutCard => {
+    aboutCard.style.height = getComputedStyle(aboutCard).width;
+    console.log(getComputedStyle(aboutCard).width);  
+  });
+}
+resizeHeight();
+// window.onresize = resizeHeight();
+window.onresize = function() {
+          aboutCards.forEach(aboutCard => {
+            aboutCard.style.height = getComputedStyle(aboutCard).width;
+            console.log(getComputedStyle(aboutCard).width);  
+          });
+}
 
 function isInViewport(el) {
   const rect = el.getBoundingClientRect();

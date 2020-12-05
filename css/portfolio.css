@@ -101,6 +101,9 @@ section {
 a:hover {    
     filter: opacity(.7);
 }
+button:hover {    
+    cursor: pointer;
+}
 .btn {
     color: #fff;
     /* background-color: var(--primary-color); */
@@ -112,13 +115,15 @@ a:hover {
     font: inherit;
     transition: background-color .3s ease-in, color .3s ease-in;
 }
-.btn:hover,
+/* .btn:hover,
 .btn:active {
     color: var(--sec-color);
     color: var(--white);
     background-color: var(--sec-color);
-    /* background-color: var(--spare-color); */
-    /* background-color: var(--white); */
+} */
+.btn:hover,
+.btn:active {
+    filter: brightness(90%);
 }
 
 .headings {
@@ -179,21 +184,6 @@ a:hover {
     background: transparent;
     outline: none;
     border: none;
-}
-/* .hamburger {
-    background-image: url('../images/hamburger.svg');
-    background-size: cover;
-}
-.close {
-    background-image: url('../images/close.svg');
-    background-size: cover;
-} */
-.line {
-    height: 3px;
-    width: 28px;
-    margin-bottom: 5px;
-    display: block;
-    background-color: #ffffff;
 }
 .nav-link:hover,
 .nav-link.active {
@@ -308,6 +298,12 @@ a:hover {
     font-size: 16px;
     padding: 8px 1px;
 }
+.blue-link {
+    color: var(--sec-color);
+    border-bottom: 2px solid var(--sec-color);
+    padding-bottom: 5px;
+    font-size: 400;
+}
 .certificate-btn:hover,
 .certificate-btn:active {
     filter: opacity(.7);
@@ -377,6 +373,9 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.card-details .card-title {
+    margin-bottom: 15px;
 }
 .project-card:hover .card-details {
     display: block;
@@ -601,9 +600,6 @@ footer {
         display: none;
     }
     
-    .social-media-icons {
-        margin: auto;
-    }
 }
 @media (max-width: 568px) {
     .header,
@@ -663,39 +659,3 @@ footer {
         margin: auto;
     }
 }
-/* @media (max-width: 999.5px) {
-    .desktop-nav {
-        display: none;
-    }
-    .mobile-nav {
-        position: fixed;
-        height: 100vh !important;
-        padding: 50px 20px;
-        width: 0%;
-        background-color: var(--sec-color);
-        color: var(--primary-color);
-        transition: width 3s ease-in;
-    } 
-    .mobile-nav a {
-        display: block;
-        padding: 15px 20px;
-    } 
-    #hamburger-btn {
-        background-color: transparent;
-        display: block;
-    }
-    #hamburger-btn {
-        border: none;
-        outline: none;
-    }
-    .mobile-nav.show {
-        display: block;
-        z-index: 5;
-        width: 70%;
-    }
-} */
-/* @media (min-width: 1000px) {
-    .social-media-icons .fa {
-        font-size: 25px;
-    }
-} */

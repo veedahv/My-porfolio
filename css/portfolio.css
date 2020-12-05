@@ -108,12 +108,12 @@ button:hover {
     color: #fff;
     /* background-color: var(--primary-color); */
     background-color: var(--white);
-    color: var(--primary-color);
+    color: var(--spare-color);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     font: inherit;
-    transition: background-color .3s ease-in, color .3s ease-in;
+    transition: all .3s ease-in;
 }
 /* .btn:hover,
 .btn:active {
@@ -169,12 +169,8 @@ button:hover {
     background-color: var(--sec-color);
     color: var(--primary-color);
 }
-.navigation-btn,
-.navigation-background,
-.navigation-contain,
-.navigation-checkbox,
-#hamburger-btn,
-.mobile-nav {
+.navigation,
+.navigation-checkbox {
     display: none;
 }
 
@@ -304,6 +300,12 @@ button:hover {
     padding-bottom: 5px;
     font-size: 400;
 }
+.blue-link:hover {    
+    filter: brightness(110%);
+}
+.blue-link:disabled {    
+    filter: brightness(90%);
+}
 .certificate-btn:hover,
 .certificate-btn:active {
     filter: opacity(.7);
@@ -412,14 +414,14 @@ button:hover {
 }
 .contact-page input,
 .contact-page textarea {
-    padding: 10px 15px;
+    padding: 8px 15px;
 }
 .contact-page .card {
     text-align: center;
 }
 .contact-page input,
 .contact-page textarea {
-    font-size: 16px;
+    font: inherit;
 }
 .contact-page i,
 .contact-page .contact-text-address,
@@ -479,6 +481,9 @@ footer {
     }
     p {
         font-size: 16px;
+    }
+    .navigation {
+        display: contents;
     }
     #hamburger-btn,
     .mobile-nav {
@@ -655,7 +660,7 @@ footer {
     .about-card {
         flex-direction: column;
     }
-    .social-media-icons {
-        margin: auto;
+    .connect-info-contain {
+        flex-direction: column;
     }
 }

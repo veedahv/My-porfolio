@@ -2,6 +2,7 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   navLinks = document.querySelectorAll('.nav-link'),
   sections = document.querySelectorAll('section'),
   header = document.querySelector('header'),
+  navigationCheckbox = document.querySelector('.navigation-checkbox'),
   aboutCards = document.querySelectorAll('.about-page-card'),
   certificateShow = document.querySelector('.certificate-img-contain'),
   certificateShowImg = document.querySelector('.certificate-img'),
@@ -41,6 +42,13 @@ function isInViewport(el) {
     })
   }
 }
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+    navigationCheckbox.checked = false;
+    console.log(navigationCheckbox.checked);
+    
+  })
+})
 certificateBtns.forEach(certificateBtn => {
   certificateBtn.addEventListener('click', () => {
     let getImg = certificateBtn.closest('.card-body').querySelector('img');

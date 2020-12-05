@@ -301,14 +301,15 @@ button:hover {
     font-size: 400;
 }
 .blue-link:hover {    
-    filter: brightness(110%);
+    filter: brightness(115%);
+    /* font-weight: bolder; */
 }
 .blue-link:disabled {    
-    filter: brightness(90%);
+    filter: brightness(80%);
 }
 .certificate-btn:hover,
 .certificate-btn:active {
-    filter: opacity(.7);
+    /* filter: opacity(.7); */
 }
 .certificate-img-contain {
     position: fixed;
@@ -414,7 +415,7 @@ button:hover {
 }
 .contact-page input,
 .contact-page textarea {
-    padding: 8px 15px;
+    padding: 8px 30px;
 }
 .contact-page .card {
     text-align: center;
@@ -432,8 +433,12 @@ button:hover {
 .contact-page a {
     font-size: 16px;
 }
-.contact-page i {
-    font-size: 26px;
+.input-wrap {
+    position: relative;
+}
+.input-label {
+    position: absolute;
+    padding: 8px 9px;
 }
 .connect-info-contain {
     justify-content: space-between;

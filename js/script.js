@@ -13,7 +13,7 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
 const resizeHeight = () => {
   aboutCards.forEach(aboutCard => {
     aboutCard.style.height = getComputedStyle(aboutCard).width;
-    console.log(getComputedStyle(aboutCard).width);  
+    // console.log(getComputedStyle(aboutCard).width);  
   });
 }
 resizeHeight();
@@ -21,13 +21,13 @@ resizeHeight();
 window.onresize = function() {
           aboutCards.forEach(aboutCard => {
             aboutCard.style.height = getComputedStyle(aboutCard).width;
-            console.log(getComputedStyle(aboutCard).width);  
+            // console.log(getComputedStyle(aboutCard).width);
           });
 }
 
-function isInViewport(el) {
+const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
-  let elId = el.id;
+  // let elId = el.id;
   // console.log(rect.top);
   // console.log(rect.bottom);
   // console.log(elId);
@@ -45,18 +45,17 @@ function isInViewport(el) {
 navLinks.forEach(navLink => {
   navLink.addEventListener('click', () => {
     navigationCheckbox.checked = false;
-    console.log(navigationCheckbox.checked);
-    
+    // console.log(navigationCheckbox.checked);    
   })
 })
 certificateBtns.forEach(certificateBtn => {
   certificateBtn.addEventListener('click', () => {
     let getImg = certificateBtn.closest('.card-body').querySelector('img');
-    console.log(certificateBtn.closest('.card-body').querySelector('img'));
+    // console.log(certificateBtn.closest('.card-body').querySelector('img'));
     viewCertificate.src = getImg.src;
     viewCertificate.alt = getImg.alt;
     certificateShow.style.display = 'flex';
-    console.log(certificateShow);
+    // console.log(certificateShow);
   })
 })
 document.addEventListener('click', (event) => {

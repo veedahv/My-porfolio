@@ -2,6 +2,8 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   navLinks = document.querySelectorAll('.nav-link'),
   sections = document.querySelectorAll('section'),
   header = document.querySelector('header'),
+  loader = document.querySelector('.loader'),
+  containAll = document.querySelector('.contain-all'),
   navigationCheckbox = document.querySelector('.navigation-checkbox'),
   aboutCards = document.querySelectorAll('.about-page-card'),
   certificateShow = document.querySelector('.certificate-img-contain'),
@@ -9,6 +11,20 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   viewCertificate = document.querySelector('.view-certificate'),
   certificateBtns = document.querySelectorAll('.certificate-btn');
 
+
+  
+
+
+const preLoadAdd = () => {
+  loader.style.visibility = 'visible';
+  containAll.style.visibility = 'hidden';
+}
+const preLoadRemove = () => {
+  loader.style.visibility = 'hidden';
+  containAll.style.visibility = 'visible';
+}
+
+setTimeout(preLoadRemove, 1000);
 
 const resizeHeight = () => {
   aboutCards.forEach(aboutCard => {

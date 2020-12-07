@@ -2,7 +2,9 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   navLinks = document.querySelectorAll('.nav-link'),
   sections = document.querySelectorAll('section'),
   header = document.querySelector('header'),
+  form = document.querySelector('form'),
   loader = document.querySelector('.loader'),
+  email = document.querySelector('#email'),
   containAll = document.querySelector('.contain-all'),
   navigationCheckbox = document.querySelector('.navigation-checkbox'),
   aboutCards = document.querySelectorAll('.about-page-card'),
@@ -18,13 +20,16 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
 const preLoadAdd = () => {
   loader.style.visibility = 'visible';
   containAll.style.visibility = 'hidden';
+  // document.body.style.position = 'fixed';
 }
+// preLoadAdd();
 const preLoadRemove = () => {
   loader.style.visibility = 'hidden';
   containAll.style.visibility = 'visible';
+  // document.body.style.position = 'relative';
 }
 
-setTimeout(preLoadRemove, 1000);
+setTimeout(preLoadRemove, 2000);
 
 const resizeHeight = () => {
   aboutCards.forEach(aboutCard => {
@@ -105,4 +110,37 @@ document.addEventListener('scroll', () => {
   sections.forEach((section) => {
     isInViewport(section);
   })
+});
+
+// Show error message
+const showError = (message) => {
+  const formGroup = email.parentElement.closest('.input-wrap');
+  formGroup.querySelector('small').innerText = message;
+  formGroup.querySelector('small').innerText = message;
+};
+
+function validateEmail(emailValid) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let emailValidTest = re.test(String(emailValid).toLowerCase());
+  // console.log(emailValidTest);
+  if (emailValidTest === true) {
+    showError('');
+  email.style.marginBottom = "12px";
+  form.querySelectorAll('input').forEach(inputTag => {
+    inputTag.value = '';
+  });
+  form.querySelector('textarea').value = '';
+} else {
+  showError('Email invalid');
+  email.style.marginBottom = "0px";
+  }
+  console.log(emailValidTest);
+
+}
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  if (email.value !== '') {
+    validateEmail(email.value);
+  }
 });

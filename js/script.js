@@ -14,8 +14,6 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   certificateBtns = document.querySelectorAll('.certificate-btn');
 
 
-  
-
 
 const preLoadAdd = () => {
   loader.style.visibility = 'visible';
@@ -34,7 +32,6 @@ setTimeout(preLoadRemove, 2000);
 const resizeHeight = () => {
   aboutCards.forEach(aboutCard => {
     aboutCard.style.height = getComputedStyle(aboutCard).width;
-    // console.log(getComputedStyle(aboutCard).width);  
   });
 }
 resizeHeight();
@@ -42,7 +39,6 @@ resizeHeight();
 window.onresize = function() {
           aboutCards.forEach(aboutCard => {
             aboutCard.style.height = getComputedStyle(aboutCard).width;
-            // console.log(getComputedStyle(aboutCard).width);
           });
 }
 
@@ -91,20 +87,6 @@ document.addEventListener('click', (event) => {
       if (!isClickInside0 && !isClickInside1 && !isClickInside2 && !isClickInside3 && !isClickInside4 && !isClickInsideCertificate) {
         certificateShow.style.display = 'none';   
       }
-    
-  // certificateBtns.forEach(certificateBtn => {
-  //   let isClickInside = certificateBtn.contains(event.target);
-  //   let isClickInsideCertificate = certificateShowImg.contains(event.target);
-  
-      
-  //     if (!isClickInside && !isClickInsideCertificate) {
-  //       certificateShow.style.display = 'none';
-  //       console.log(isClickInside);
-  //       console.log(isClickInsideLi);
-  //       console.log(event.target);      
-  //     }
-    
-  // })
 });
 document.addEventListener('scroll', () => {
   sections.forEach((section) => {
@@ -116,13 +98,11 @@ document.addEventListener('scroll', () => {
 const showError = (message) => {
   const formGroup = email.parentElement.closest('.input-wrap');
   formGroup.querySelector('small').innerText = message;
-  formGroup.querySelector('small').innerText = message;
 };
 
 function validateEmail(emailValid) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let emailValidTest = re.test(String(emailValid).toLowerCase());
-  // console.log(emailValidTest);
   if (emailValidTest === true) {
     showError('');
   email.style.marginBottom = "12px";
@@ -134,8 +114,6 @@ function validateEmail(emailValid) {
   showError('Email invalid');
   email.style.marginBottom = "0px";
   }
-  console.log(emailValidTest);
-
 }
 
 form.addEventListener('submit', function (event) {

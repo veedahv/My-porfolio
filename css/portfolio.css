@@ -372,13 +372,13 @@ button:hover {
     border-radius: 50px;
     top:  50%;
     left: 50%;
+    display: none;
     transform: translateX(-50%);
     transform: translateY(-50%);
-    p12
     /* transform: translateX(-50%); */
     z-index: 5000;
     opacity: 0.8;
-    animation: inOut 10s ease-in-out;
+    /* animation: inOut 10s ease-in-out; */
 }
 .available-txt {
     font-size: 14px;

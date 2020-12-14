@@ -365,6 +365,41 @@ button:hover {
 .certificate-img {
     max-width: 700px;
 }
+.no-certificate-toast {
+    position: fixed;
+    padding: 10px 20px;
+    background-color: var(--sec-color);
+    border-radius: 50px;
+    top:  50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    p12
+    /* transform: translateX(-50%); */
+    z-index: 5000;
+    opacity: 0.8;
+    animation: inOut 10s ease-in-out;
+}
+.available-txt {
+    font-size: 14px;
+}
+@keyframes inOut {
+    0% {
+        top: -50%;
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    50% {
+        top: 50%;
+        opacity: 0.8;
+        transform: translateY(-50%);
+    }
+    100% {
+        top: -50%;
+        opacity: 0;
+        transform: translateY(0%);
+    }
+}
 .skill-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
@@ -671,6 +706,9 @@ footer {
     }
     .home-intro {
         font-size: 15px;
+    }
+    .available-txt {
+        font-size: 12px;
     }
     .project-grid {
         column-count: 1;

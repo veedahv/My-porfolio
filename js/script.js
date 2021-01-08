@@ -68,11 +68,18 @@ navLinks.forEach(navLink => {
 certificateBtns.forEach(certificateBtn => {
   certificateBtn.addEventListener('click', () => {
     let getImg = certificateBtn.closest('.card-body').querySelector('img');
-    // console.log(certificateBtn.closest('.card-body').querySelector('img'));
     viewCertificate.src = getImg.src;
     viewCertificate.alt = getImg.alt;
     certificateShow.style.display = 'flex';
-    // console.log(certificateShow);
+    if (certificateBtn.disabled === true) {
+      document.querySelector('.no-certificate-toast').style.animation = `inOut 5s ease-in-out`;
+      setTimeout(() => {
+        document.querySelector('.no-certificate-toast').style.animation = `none`;        
+      }, 5000);
+      console.log('lalala yaya');
+    } else {
+      console.log('lalala');
+    }
   })
 })
 document.addEventListener('click', (event) => {

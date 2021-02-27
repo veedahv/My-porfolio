@@ -273,6 +273,11 @@ button:hover {
     flex-basis: 50%;
     position: relative;
 }
+.blog-link {
+    text-decoration-color: var(--white);
+    text-decoration: underline;
+    padding-bottom: 2px;
+}
 .skill-card-contain {
     padding: 30px 10px;
     width: 100%;

@@ -20,7 +20,7 @@ ul {
     list-style: none;
 }
 p {
-    max-width: 400px;
+    max-width: 500px;
     font-size: 18px;
 }
 a {
@@ -102,6 +102,12 @@ section {
     max-width: 1000px;
     margin: auto;
     padding: 15px 40px;
+}
+
+.main-title,
+.project-intro {
+    text-align: center;
+    margin: 15px auto;
 }
 
 .card {

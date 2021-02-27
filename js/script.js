@@ -4,7 +4,10 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   header = document.querySelector('header'),
   form = document.querySelector('form'),
   loader = document.querySelector('.loader'),
+  name = document.querySelector('#name'),
   email = document.querySelector('#email'),
+  subject = document.querySelector('#subject'),
+  message = document.querySelector('#message'),
   containAll = document.querySelector('.contain-all'),
   navigationCheckbox = document.querySelector('.navigation-checkbox'),
   aboutCards = document.querySelectorAll('.about-page-card'),
@@ -14,6 +17,24 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   certificateBtns = document.querySelectorAll('.certificate-btn');
 
 
+
+// Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCycw1mAfqDNNtBEA1NzVjgcGSfreeaspY",
+    authDomain: "portfolio-form-1fbdb.firebaseapp.com",
+    databaseURL: "portfolio-form-1fbdb-default-rtdb.firebaseio.com",
+    projectId: "portfolio-form-1fbdb",
+    storageBucket: "portfolio-form-1fbdb.appspot.com",
+    messagingSenderId: "781619757844",
+    appId: "1:781619757844:web:59d48903eed9bffe5eb801",
+    measurementId: "G-ECM5E149QR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+var messagesRef = firebase.database().ref('messages');
 
 const preLoadAdd = () => {
   loader.style.visibility = 'visible';
@@ -106,11 +127,21 @@ const showError = (message) => {
   const formGroup = email.parentElement.closest('.input-wrap');
   formGroup.querySelector('small').innerText = message;
 };
+const saveMessage = () => {
+  let newMessageRef = messagesRef.push();
+   newMessageRef.set({
+     name: name.value,
+     email: email.value,
+     subject: subject.value,
+     message: message.value,
+   });
+};
 
 function validateEmail(emailValid) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let emailValidTest = re.test(String(emailValid).toLowerCase());
   if (emailValidTest === true) {
+    saveMessage();
     showError('');
   email.style.marginBottom = "12px";
   form.querySelectorAll('input').forEach(inputTag => {

@@ -325,6 +325,12 @@ button:hover {
 .edu-title {
     font-size: 16px;
 }
+.edu-ul {
+    list-style: outside circle;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 .edu-text {
     font-size: 15px;
 }

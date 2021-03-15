@@ -104,15 +104,22 @@ certificateBtns.forEach(certificateBtn => {
   })
 })
 document.addEventListener('click', (event) => {
+  // let y = 0;
+  // for (let y = 0; y < certificateBtns.length; y++) {
+  //   const element = certificateBtns[y];
+    
+  // }
+
     let isClickInside0 = certificateBtns[0].contains(event.target);
     let isClickInside1 = certificateBtns[1].contains(event.target);
     let isClickInside2 = certificateBtns[2].contains(event.target);
-    let isClickInside3 = certificateBtns[3].contains(event.target);
-    let isClickInside4 = certificateBtns[4].contains(event.target);
+    // let isClickInside3 = certificateBtns[3].contains(event.target);
+    // let isClickInside4 = certificateBtns[4].contains(event.target);
     let isClickInsideCertificate = certificateShowImg.contains(event.target);
   
       
-      if (!isClickInside0 && !isClickInside1 && !isClickInside2 && !isClickInside3 && !isClickInside4 && !isClickInsideCertificate) {
+      // if (!isClickInside0 && !isClickInside1 && !isClickInside2 && !isClickInside3 && !isClickInside4 && !isClickInsideCertificate) {
+      if (!isClickInside0 && !isClickInside1 && !isClickInside2 && !isClickInsideCertificate) {
         certificateShow.style.display = 'none';   
       }
 });

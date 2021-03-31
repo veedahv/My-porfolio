@@ -19,15 +19,4 @@ const preLoadRemove = () => {
 
 setTimeout(preLoadRemove, 50);
 
-// window.onresize = function() {
-//           aboutCards.forEach(aboutCard => {
-//             aboutCard.style.height = getComputedStyle(aboutCard).width;
-//           });
-// }
 
-
-// document.addEventListener('scroll', () => {
-//   sections.forEach((section) => {
-//     isInViewport(section);
-//   })
-// });

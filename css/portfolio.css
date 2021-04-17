@@ -385,9 +385,7 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5000;
-    /* opacity: 0.8; */
     opacity: 0;
-    /* animation: inOut 5s ease-in-out 5s; */
 }
 .available-txt {
     font-size: 14px;
@@ -416,6 +414,7 @@ button:hover {
 }
 .skill-cards img {
     width: 64px;
+    height: 64px;
 }
 .project-grid {
     column-count: 2;

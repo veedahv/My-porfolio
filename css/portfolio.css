@@ -307,7 +307,8 @@ button:hover {
     transform: rotate(-45deg);
     margin: auto;
 }
-#skills-page {
+#skills-page,
+#experience-page {
     background-color: var(--primary-color);
 }
 .skills-page .card {

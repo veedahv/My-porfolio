@@ -13,6 +13,7 @@ const mobileNavLinks = document.querySelectorAll('.mobile-nav-link'),
   aboutCards = document.querySelectorAll('.about-page-card'),
   certificateShow = document.querySelector('.certificate-img-contain'),
   certificateShowImg = document.querySelector('.certificate-img'),
+  showDetailsCheck = document.querySelectorAll('.show-details-check'),
   viewCertificate = document.querySelector('.view-certificate'),
   certificateBtns = document.querySelectorAll('.certificate-btn');
 
@@ -84,19 +85,50 @@ const isCertInside = function (event) {
   //   document.removeEventListener('click', isCertInside);
   }
 }
+const isProjectInside = function (event) {
+  // if (certificateShow.style.display == 'flex') {
+    // if (event.target.classList.contains('certificate-btn')) {
+    //   certBtn = event.target;
+    //   console.log(event.target);
+    //   console.log(event.target.classList);
+    // }
+    // let isClickInsideCertificate = certificateShowImg.contains(event.target);
+    // let isCertificateBtn = certBtn.contains(event.target);
+    // if (!isCertificateBtn && !isClickInsideCertificate) {
+      console.log(event.target.classList);
+      console.log(!event.target.classList.contains('project-content'));
+      if (!event.target.classList.contains('project-content')) {
+      showDetailsCheck.forEach(showDetails => {
+          showDetails.checked = false;
+      });
+      // console.log('lalalayaya');
+      document.removeEventListener('click', isProjectInside);
+    // } else {
+      // console.log('ayayllayay');
+    }
+  // } else {
+  //   console.log('llayayayayoooo');
+  //   document.removeEventListener('click', isCertInside);
+  // }
+}
 navLinks.forEach(navLink => {
   navLink.addEventListener('click', () => {
     navigationCheckbox.checked = false;
     // console.log(navigationCheckbox.checked);    
   })
 })
-certificateBtns.forEach(certificateBtn => {
-  certificateBtn.addEventListener('click', () => {
-    let getImg = certificateBtn.closest('.card-body').querySelector('img');
-    viewCertificate.src = getImg.src;
-    viewCertificate.alt = getImg.alt;
-    certificateShow.style.display = 'flex';
-    document.addEventListener('click', isCertInside);
+// certificateBtns.forEach(certificateBtn => {
+//   certificateBtn.addEventListener('click', () => {
+//     let getImg = certificateBtn.closest('.card-body').querySelector('img');
+//     viewCertificate.src = getImg.src;
+//     viewCertificate.alt = getImg.alt;
+//     certificateShow.style.display = 'flex';
+//     document.addEventListener('click', isCertInside);
+//   })
+// });
+showDetailsCheck.forEach(showDetails => {
+  showDetails.addEventListener('change', () => {
+    document.addEventListener('click', isProjectInside);
   })
 });
 document.addEventListener('scroll', () => {
@@ -128,7 +160,12 @@ const saveMessage = () => {
     //  console.log(res);
   }).then((res) => {
     console.log(res);
-  })
+    if (res.status == 200) {
+      
+    } else {
+      
+    }
+  }).catch(err => console.log(err))
 };
 
 function validateEmail(emailValid) {

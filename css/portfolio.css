@@ -313,6 +313,24 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+.skills-ul {
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.skills-li {
+    border: 2px solid #FFFFFF;
+    border-radius: 7px;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.skills-li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .skill-card-text {
     transform: rotate(-45deg);
     margin: auto;
@@ -329,6 +347,12 @@ button:hover {
 }
 .edu-card {
     box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+.edu-card:hover {
+    transition: all .3s ease-in-out;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transform: scale(1.03);
 }
 .edu-head {
     justify-content: space-between;
